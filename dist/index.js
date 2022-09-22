@@ -32904,6 +32904,7 @@ const INPUTS = {
 function start() {
     return src_awaiter(this, void 0, void 0, function* () {
         try {
+            console.log(`On Master`);
             const notionToken = core.getInput(INPUTS.NOTION_TOKEN, { required: true });
             const notionDb = core.getInput(INPUTS.NOTION_DB, { required: true });
             const githubToken = core.getInput(INPUTS.GITHUB_TOKEN, { required: true });
